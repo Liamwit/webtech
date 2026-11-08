@@ -2,7 +2,113 @@
 
 /* === tokens === */
 :root {
-
+  --color-banner: #c8b8ff;
+  --color-banner-link: #5551ff;
+  --color-hero: #779cee;
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+  --color-hover: #333333;
+  --font-body: Arial, Helvetica, sans-serif;
+  --space: 2rem;
 }
 
 /* === your rules === */
+body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+}
+
+.banner{
+    text-align: center;
+    background-color: var(--color-banner);
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+.banner a {
+    color: var(--color-banner-link);
+}
+
+header {
+  text-align: right;
+  padding: 1.5rem var(--space);
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+    margin-left: var(--space);
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-ink);
+    font-size: 0.875rem;
+}
+
+.banner a:hover,
+.banner a:focus,
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+main{
+    background-color: var(--color-hero);
+    min-height: 80vh;
+    padding: 4rem var(--space);
+}
+
+article,
+.afbeelding {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+article{
+    padding: var(--space) 4rem var(--space) 0
+}
+
+.afbeelding {
+    padding: var(--space);
+}
+
+img{
+    width: 70%;
+}
+
+.bovenkop {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: var(--space);
+    max-width: 24rem;
+}
+
+.knop {
+    display: inline-block;
+    background-color: var(--color-ink);
+    padding: 0.8rem var(--space);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-paper)
+}
+
+.knop:hover,
+.knop:focus {
+    background-color: var(--color-hover);
+}
